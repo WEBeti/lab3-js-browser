@@ -63,36 +63,7 @@
 
             <div class="col-sm-8 col-12 below-nav">
                 <h1>All</h1>
-                <ul class="list-group list-group-flush">
-
-                    <li class="list-group-item">
-                        <div class="d-flex w-100 justify-content-between">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="check-t1">
-                                <label class="custom-control-label" for="check-t1">Complete Lab 2</label>
-                            </div>
-                            <small>Friday 27 March 2020 at 11:30</small>
-                        </div>
-                    </li>
-
-                    <li class="list-group-item">
-                        <div class="d-flex w-100 justify-content-between">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="check-t2">
-                                <label class="custom-control-label" for="check-t2">Buy some groceries</label>
-                            </div>
-                            <small>Today at 14:00</small>
-                        </div>
-                    </li>
-
-                    <li class="list-group-item">
-                        <div class="d-flex w-100 justify-content-between">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input important" id="check-t3">
-                                <label class="custom-control-label important" for="check-t3">Read a good book!</label>
-                            </div>
-                        </div>
-                    </li>
+                <ul class="list-group list-group-flush" id="tasklist">
 
                 </ul>
 
@@ -108,7 +79,9 @@
         </div>
 
     </div>
-
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script src="tasks.js"></script>
+    <script src="taskmanager.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

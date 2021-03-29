@@ -2,7 +2,7 @@
 
 let tasklist_elem = document.getElementById('tasklist');
 
-for (let task of tasks.tasks){
+for (let [i,task] of tasks.tasks.entries()){
     let new_task_item = document.createElement('li');
     new_task_item.className = "list-group-item";
 
@@ -17,7 +17,7 @@ for (let task of tasks.tasks){
     let new_task_checkbox = document.createElement('input');
     new_task_checkbox.className = "custom-control-input";
     new_task_checkbox.setAttribute ("type", "checkbox");
-    new_task_checkbox.setAttribute ("id", "check-t");
+    new_task_checkbox.setAttribute ("id", "check-t"+i);
     new_task_checkbox_div.appendChild(new_task_checkbox);
     if (task.isUrgent){
         new_task_checkbox.classList.add ("important");
@@ -25,7 +25,7 @@ for (let task of tasks.tasks){
 
     let new_task_label = document.createElement('label');
     new_task_label.className = "custom-control-label";
-    new_task_label.setAttribute ("for", "check-t");
+    new_task_label.setAttribute ("for", "check-t"+i);
     new_task_label.innerText = task.description;
     new_task_checkbox_div.appendChild(new_task_label)
     if (task.isUrgent){
